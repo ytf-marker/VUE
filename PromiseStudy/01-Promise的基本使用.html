@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		 
+   			new Promise((resole,reject) =>{
+				setTimeout(()=>{
+				  resole()
+				},3000)
+   			}).then(()=>{
+   				console.log("第一次触发");
+   				return new Promise((resole,project) =>{
+   					setTimeout(()=>{
+						  resole()
+						},3000)
+   				}).then(()=>{
+   					console.log("第二次触发");
+   				})
+   			})
+   			//一般异步操作时使用promise对这个异步操作进行封装
+   			
+   			
+		</script>
+	</body>
+</html>
