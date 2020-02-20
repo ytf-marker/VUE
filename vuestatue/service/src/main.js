@@ -27,8 +27,8 @@ new Vue({
 //   console.log(res)
 // })
 //axiso的全局配置
-axios.defaults.baseURL='http://106.54.54.237:8000'  //全局端口
-axios.defaults.timeout= 5000   //超时时间
+// axios.defaults.baseURL='http://106.54.54.237:8000'  //全局端口
+// axios.defaults.timeout= 5000   //超时时间
 //2.axios的并发请求
 
 
@@ -58,4 +58,7 @@ axios.defaults.timeout= 5000   //超时时间
 // }).then((res)=>{
 //   console.log(res['data']) 
 // })
+
+
+
 
